@@ -1,52 +1,39 @@
-# Margareta Baraliuc — Portfolio & Automation Projects
+# 🚀 Margareta Baraliuc — Automation Portfolio (Playwright + TypeScript)
 
-🌐 Live Resume: [View my resume](https://margareta2022.github.io/Margareta-Baraliuc-Portofolio/)
-Hold the Cmd (mac) and click the link ; 
-Hold "CTRL" (Window) and click the link
+[![Playwright Tests](https://github.com/margareta2022/Margareta-Baraliuc-Portfolio/actions/workflows/playwright.yml/badge.svg)](https://github.com/margareta2022/Margareta-Baraliuc-Portfolio/actions)
+
+🔗 Live Resume: [View my live resume](https://margareta2022.github.io/Margareta-Baraliuc-Portfolio/)
 
 
+## 🧪 Test Coverage in This Repository
 
-Senior Software Engineer with 6+ years of experience building and maintaining scalable test automation frameworks and CI-ready quality solutions.  
-This repository is my **professional portfolio**, showcasing **Playwright + TypeScript** automation, project structure, and real-world testing patterns.
+This repository includes practical Playwright + TypeScript examples demonstrating:
 
-- 📍 Orlando, FL • 🇺🇸 US Citizen
-- 🎯 Target roles: Senior Software Engineer / Senior SDET
-- 🧪 Focus: Playwright, TypeScript, CI/CD, Automation Architecture
+- Smoke testing for homepage validation
+- End-to-end UI testing with TodoMVC
+- API response validation using Playwright request context
+- Cross-browser execution (Chromium, Firefox, WebKit)
+- HTML reporting, screenshots, traces, and retry support
+ ## 🧱 Framework Design
+This project uses the Page Object Model (POM) to keep test logic clean, reusable, and maintainable. Page interactions are separated from test assertions to support scalable automation design.
+## 🧰 Framework Utilities
+This project includes reusable helper methods and centralized test data to support cleaner, more maintainable Playwright tests. The structure is designed to reflect scalable automation practices used in real-world QA engineering environments.
 
-**Links**
-- GitHub: https://github.com/Margareta2022
-- LinkedIn: https://www.linkedin.com/in/margareta-baraliuc/
+### Test Structure
+- `tests/smoke` → critical smoke coverage
+- `tests/e2e` → user workflow validation
+- `tests/api` → backend/API validation
 
----
+## 🔄 CI/CD with GitHub Actions
 
-## Projects in this Repository
+This project includes automated test execution using GitHub Actions.  
+Tests can run automatically on every push and pull request, helping validate quality continuously.
 
-### 🎭 Playwright Automation Framework
-A Playwright + TypeScript framework demonstrating:
-- Cross-browser UI testing (Chromium, Firefox, WebKit)
-- API testing using Playwright `request` context
-- CI-friendly configuration (retries, traces, screenshots, videos)
-- Maintainable folder structure (smoke / api / e2e)
+### Workflow coverage
+- Install dependencies
+- Install Playwright browsers
+- Run Playwright test suite
+- Generate HTML report
+- Upload test artifacts for review
 
-**Key features**
-- ✅ Smoke UI tests for critical flows
-- ✅ API health check tests
-- ✅ HTML reporting
-- ✅ Trace on first retry + artifacts on failure
-
----
-
-## Project Structure
-
-```text
-.
-├── tests
-│   ├── smoke
-│   ├── api
-│   └── e2e
-├── playwright.config.ts
-├── package.json
-├── .github
-└── resume
-    ├── index.html
-    └── styles.css
+This setup reflects CI/CD practices used in real-world automation frameworks.

@@ -1,10 +1,17 @@
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
+import { HomePage } from '../pages/home-page';
+import { Helpers } from '../utils/helpers';
 
-test.describe('Smoke Tests - Homepage', () => {
-  test('homepage loads and displays correct title', async ({ page }) => {
-    await page.goto('https://example.com');
+test.describe('Smoke - Homepage', () => {
+  test('should load the homepage successfully', async ({ page }) => {
+    const homePage = new HomePage(page);
 
-    await expect(page).toHaveTitle(/Example Domain/);
-    await expect(page.locator('h1')).toHaveText('Example Domain');
+    await homePage.goto();
+    await homePage.verifyHomePageLoaded();
+
+    await Helpers.takeScreenshotOnDemand(
+      page,
+      `homepage-${Helpers.generateTimestamp()}.png`
+    );
   });
 });
