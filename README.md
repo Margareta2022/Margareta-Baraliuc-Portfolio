@@ -1,6 +1,6 @@
 # 🚀 Margareta Baraliuc — Automation Portfolio (Playwright + TypeScript)
 
-[![Playwright Tests](https://img.shields.io/github/actions/workflow/status/margareta2022/Margareta-Baraliuc-Portfolio/playwright.yml?label=Playwright%20Tests)](https://github.com/margareta2022/Margareta-Baraliuc-Portfolio/actions)
+[![Playwright Tests](https://img.shields.io/github/actions/workflow/status/Margareta2022/Margareta-Baraliuc-Portfolio/playwright.yml?branch=main&label=Playwright%20Tests)](https://github.com/Margareta2022/Margareta-Baraliuc-Portfolio/actions/workflows/playwright.yml)
 
 🔗 Live Resume: [View my live resume](https://margareta2022.github.io/Margareta-Baraliuc-Portfolio/)
 
